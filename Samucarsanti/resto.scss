@@ -1,0 +1,457 @@
+.logoprin {
+    height: 6.25rem;
+    margin-left: 2rem;
+    float: left;
+}
+
+
+////////////////////////////MENU
+
+.menu-bar {
+    display: flex;
+    padding: 25px 0 0 400px;
+}
+
+.menu-div {
+    padding: 0 10px 0 10px;
+}
+.menu-div1 {
+    padding: 0 35px 0 10px;
+}
+
+
+.menu-div_slide {
+    left: 50px;
+}
+
+.black{
+    background-color: var(--color-representative-transparent);
+}
+.menu-nav {
+    width: 100%;
+    height: 74px;
+    font-size: 1rem;
+    list-style: none;
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-primary);
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        position: relative;
+
+        display: flex;
+        align-items: center;
+    }
+    &__link:hover {
+        color: var(--color-bottom);
+    }
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
+        padding: 2px;
+    }
+    & div ul ol {
+        text-decoration: none;
+        list-style: none;
+    }
+    & div ul {
+        display: none;
+        //transform: translateX(-10px) translateY(30px);
+        position: absolute;
+        min-width: 140px;
+    }
+    & div:hover > ul {
+        display:block;
+        padding: 10px 0 0 0;
+        position: relative;
+    }
+}
+
+////NAV-LINGUAS
+
+.linguas {
+    width: 279px;
+    height: 30%;
+    background-color: var(--color-bottom);
+    position: fixed;
+    left: 100%;
+}
+///////////////IMAGEM BANNER
+#banner {
+    position: relative;
+    text-align: center;
+    
+    & img {
+        width: 100%;
+        height: 696px;
+   
+    }
+    & .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: var(--color-primary);
+    }
+    & h2 {
+        font-size: 35px;
+        font-weight: 500;
+        text-shadow: 1px 2px #999;
+    }
+    & p {
+        font-weight: 500;
+        //text-shadow: 1px 2px #999;
+    }
+    & a {
+        display: inline-block;
+        width: 100px;
+        color: var(--color-primary);
+        text-decoration: none;
+        padding: 7px;
+        text-align: center;
+        margin-top: 20px;
+        border: 3px solid #ffffff;
+        align-content: center;
+    }
+    & a:hover {
+        color: var(--color-bottom);
+    }
+}
+//////////MAIN
+
+#welcome {
+    & h2 {
+        text-align: center;
+    }
+    & p {
+        text-align: center;
+    }
+}
+
+#exemplosimages {
+    text-align: center;
+    & h3, h4 {
+        text-align: center;
+    }
+    & .container {
+        display: flex;
+        justify-content: center;
+    }
+    & article {
+        margin: 15px;
+    }
+    & img {
+        border-radius: 50%;
+        border: 5px solid var(--color-primary);
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/////////MAIN IMAGENS DESTINOS
+
+#imagesdestinos {
+    //text-align: center;
+    background-color: var(--color-representative);
+    & h3, h4 {
+        text-align: center;
+        color: var(--color-primary);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    & .container1 {
+        //display: flex;
+        //flex-wrap: wrap;
+        justify-content: center;
+
+        width: 1100px;
+        margin: 20px auto;
+        columns: 4;
+        column-gap: 40px;
+
+        .sa{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mc{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ror{ 
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ea{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform: translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ca{
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cg {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ct {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mcbo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ptocruz {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .coro {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .val {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cari {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ccs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .apu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+
+        .lr {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ic {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .im {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .tu {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mo {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pndo {
+            height: 65px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-360%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .gs {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .st {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .cb {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ch {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .pp {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .ito {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-456%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+        .mer {
+            height: 35px;
+            width: 236px;
+            line-height: 2.1;
+            transform:translateX(0%) translateY(-668%);
+            position: absolute;
+            background-color: var(--color-black-transparent);
+        }
+    }
+
+    & .container1 .infodestino {
+        width: 100%;
+        //margin: 0 0 20px;
+        padding: 10px;
+        //background: var(--color-primary);
+        overflow: hidden;
+        break-inside: avoid;
+    }
+    & .container .infodestino img {
+        max-width: 100%;
+    }
+
+    & .infodestino1 {
+        margin: 15px;
+        display: flex;
+    }
+    & img {
+        //padding: 5px;
+        position: relative;
+    }
+}
+
+///// RESPONSIVE DAS IMAGENS DOS DESTINOS ()
+@media (max-width: 1100px)
+{
+    #imagesdestinos .container1 {
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0px;
+    }
+}
+@media (max-width: 768px)
+{
+    #imagesdestinos .container1 {
+        columns: 2;
+    }
+}
+@media (max-width: 480px)
+{
+    #imagesdestinos .container1 {
+        columns: 1;
+    }
+}
+//// FIM DO RESPONSIVE DAS IMAGENS DESTINOS
+
+footer {
+    border-top: thick solid var(--color-bottom);
+    margin-top: -29px;
+}
+
+footer .container {
+    background-color: var(--color-primary);
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    & p {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.copy {
+    font-size: 20px;
+}
