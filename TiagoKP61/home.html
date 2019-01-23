@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="trab.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="botao">
+        <div></div>
+    </div>
+    <nav id="menu">
+        <div class="menu">
+            <ul>
+                <li><a href= "home.html" class="nav-link">Home</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="ofertas.html" class="nav-link">Ofertas</a></li>
+                <li><a href="trad.html" class="nav-link">Tradições</a></li>
+                <li><a href="recomendacoes.html" class="nav-link">Recomendações</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background">
+        </div>
+    
+    <section class="galeria">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img class="imgem-slide" src="http://www.qualviagem.com.br/wp-content/uploads/2015/11/aoraki-mackenzie-foto-maki-yanagimachi.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="imgem-slide" src="http://www.qualviagem.com.br/wp-content/uploads/2015/11/1280px-Glow_worms_hig_res_003-commons.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="imgem-slide" src="http://www.qualviagem.com.br/wp-content/uploads/2015/11/Wellingtons-LUX-Festival-foto-james-gilberd.jpg">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+            <div class="container">
+                <div class="txt_container">
+                    <p class="base_txt">
+                            Cultura neozelandesa é considerada das mais saudaveis no mundo!
+
+                    </p>
+                </div>
+            </div>
+
+            </class>
+        <div class="rodape">
+                <ul class="icones-sociais">
+                        <a href=”https://www.facebook.com/tiago.pereiradias.3 DO FACEBOOK“> <img src="data:image/png;base64,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" da IMAGEM” /></a>
+
+                        <a href=”https://www.instagram.com/tiagozb/ do INSTAGRAM“> <img  src="data:image/png;base64,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" da IMAGEM” /></a>
+                        
+                        <a href=”URL do Youtube“><img src="https://gluesociety.com/wp-content/uploads/2016/12/icon-youtube-light.png" da IMAGEM” /></a>
+                        
+                </ul>
+        </div>
+
+    </section>
+</body>
+
+</html>

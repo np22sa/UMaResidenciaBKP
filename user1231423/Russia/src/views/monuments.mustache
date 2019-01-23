@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    {{> common/head }}
+</head>
+<body>
+    <!--Nav bar-->
+    {{> common/nav }}
+
+    <!--Monuments cards-->
+    <div class="monument_cards" id="monuments">
+
+    </div>
+
+    <!--Footer-->
+    {{> common/footer }}
+    
+    <!--Scripts-->
+    {{> common/scripts }}
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open('GET', 'assets/json/monuments.json', true); //Get the json file
+
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            for (var i = 0; i < data.length; i++) { //Loop the data we got from the json
+                var main_div = document.createElement("div"); //Create main_div
+                main_div.className = "monument"; //Add class to the main_div
+
+                var a = document.createElement("a"); //Create a
+                main_div.appendChild(a); //Make a child of main div
+                a.target = "_blank"; //Set a target to _blank
+                a.href = data[i].target; //Set a href to the data we got from the json file
+
+                var img = document.createElement("img"); //Create img element
+                a.appendChild(img); //Make img child of a
+                img.src = data[i].src; //Set img src to the data we got form the json file
+                img.alt = data[i].alt; //Set img alt to the data we got from the json file
+
+                var div_secundaria = document.createElement("div"); //Create div_secundaria
+                a.appendChild(div_secundaria); //Make div_secundaria child of a
+                div_secundaria.className = "monument_text_container"; //Add a class to div_secundaria
+
+                var p = document.createElement("p"); //Create p
+                var text = document.createTextNode(data[i].name); //Set the text to the data we got form the json file
+                div_secundaria.appendChild(p); //Make p child of div_secundaria
+                p.appendChild(text); //Make text child of p
+
+                document.getElementById("monuments").appendChild(main_div); //Get the id "monuments" in the file and print the main_div inside it
+
+            }
+
+        }
+        request.send()
+    </script>
+
+</body>
+
+</html>

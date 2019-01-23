@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    {{> common/head }}
+</head>
+
+<body>
+    <!--Nav bar-->
+    {{> common/nav }}
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://thumbs.web.sapo.io/?epic=OGIwA/lHVg/KiPVz2y2ZTk6WAUkmkaEmamV4hbeoOebw5ZpeC9qnj0cQ+KUPlBM2ph+H699Q57TlmGO7YAEozjszXP1g1XVbvI9Uwat5VEGrGMM=&W=1440&H=500&delay_optim=1&tv=1&crop=center">
+        </div>
+        <div class="mySlides fade">
+            <img src="http://www.ggconsultant.com/images/uni-russia.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://static.brusselsairlines.com/_img/destinationPage2/Russia/Moscow/Moscow_kremlin.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div class="img_cards" id="cards">
+
+    </div>
+    
+    <!--Footer-->
+    {{> common/footer }}
+
+    <!--Scripts-->
+    {{> common/scripts }}
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open('GET', 'assets/json/cards.json', true); //Get the json file
+
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            for (var i = 0; i < data.length; i++) { //Loop the data we got from the json
+                var main_div = document.createElement("div"); //Create main_div
+                main_div.className = "card"; //Add class to the main_div
+
+                var img = document.createElement("img"); //Create img element
+                main_div.appendChild(img); //Make img child of a
+                img.src = data[i].src; //Set img src to the data we got from the json file
+                img.alt = data[i].alt; //Set img alt to the data we got from the json file
+
+                var div_secundaria = document.createElement("div");
+                div_secundaria.className = "text_container";
+                var p = document.createElement("p"); //Create p
+                var text = document.createTextNode(data[i].desc); //Set the text to the data we got form the json file
+                p.appendChild(text); //Make text child of p
+                div_secundaria.appendChild(p); //Make p child of div_secundaria
+                main_div.appendChild(div_secundaria); //Make div_secundaria child of main_div
+
+                document.getElementById("cards").appendChild(main_div); //Get the id "cards" in the file and print the main_div inside it
+
+            }
+        }
+        request.send()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    {{> common/head }}
+</head>
+
+<body>
+    <!--Nav bar-->
+    {{> common/nav }}
+    
+    <!--Contact form with map on left side-->
+    <div class="full-contact-container">
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Moscovo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-form-txt">
+                <h1>TXT HERE</h1>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <input type="text" id="name" name="firstname" placeholder="Your name...">
+
+                    <input type="text" id="email" name="lastname" placeholder="Your email...">
+
+                    <textarea id="subject" name="text" placeholder="Write something.."></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    {{> common/footer }}
+
+    <!--Scripts-->
+    {{> common/scripts }}
+
+</body>
+
+</html>

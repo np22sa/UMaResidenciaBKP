@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Russia</title>
+    <link rel="icon" type="image/png" href="assets/favicon/Russia_flag.png">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"></head>
+<body>
+    <!--Nav bar-->
+    <div class="topnav" id="nav_top">
+        <a class="img" href="index.html">
+            <img class="logo" src="assets/logo/Russia_flag.png"> 
+        </a>
+        <a href="/contact.html">Contact</a>
+        <a href="/experience.html">Experience</a>
+        <a href="/celebrities.html">Celebrities</a>
+        <a href="/monuments.html">Monuments</a>
+        <a href="/index.html">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="menu_icon fas fa-bars"></i>
+        </a>
+    </div>
+    <!--Monuments cards-->
+    <div class="celeb_cards" id="celeb_cards">
+
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="social_media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2018 Russia</p>
+        </div>
+     </div>    
+    <!--Scripts-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_top");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open('GET', 'assets/json/celebrities.json', true); //Get file
+
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            for (var i = 0; i < data.length; i++) { //Loop too get all data from the file
+
+                var main_div = document.createElement("div"); //Create main_div
+                main_div.className = "celeb"; //add class name Celeb to main div
+
+                var div_name = document.createElement("div"); //Create div_name
+                div_name.className = "celeb_name"; //Add class celeb_name to the div
+                var p_name = document.createElement("p") //Create p_name
+                var p_text = document.createTextNode(data[i].name); //Set p text to the value it gets form the json
+                p_name.appendChild(p_text); //Make p_text child of p_name
+                div_name.appendChild(p_name); //Make p_name child of div_name
+                main_div.appendChild(div_name); //Make div_name child of main_div
+
+                var div_img = document.createElement("div"); //Create div_img
+                div_img.className = "celeb_background_img"; //Add class celeb_background_img to div_img
+                var img = document.createElement("img"); //Create img element
+                img.src = data[i].src; //Set img src to the value it gets from the json file
+                img.alt = data[i].alt; //Set img alt to the value it gets from the json file
+                div_img.appendChild(img); //Make img child of div_img
+                main_div.appendChild(div_img); //Make div_img child of main_div
+
+                var div_age = document.createElement("div"); //Create div_age
+                div_age.className = "celeb_age_container"; //Add class celeb_age_container to div_age
+                var p_age = document.createElement("p") //Create p_name
+                var p_age_txt = document.createTextNode(data[i].age); //Set p_age_txt text to the value it gets form the json
+                p_age.appendChild(p_age_txt); //Make p_age_text child of p_age
+                div_age.appendChild(p_age); //Make p_age child of div_age
+                main_div.appendChild(div_age);//Make div_age child of main_div
+
+                var div_height = document.createElement("div"); //Create div_height
+                div_height.className = "celeb_height_container"; //Add class celeb_height_container to div_height
+                var p_height = document.createElement("p") //Create p_name
+                var p_height_txt = document.createTextNode(data[i].height); //Set p text to the value it gets form the json
+                p_height.append(p_height_txt); //Make p_height_text child of p_height
+                div_height.appendChild(p_height); //Make p_name child of div_name
+                main_div.appendChild(div_height); //Make div_height child of main_div
+
+                var div_comp = document.createElement("div"); //Create div_comp
+                div_comp.className = "celeb_comp_container"; //Add class celeb_comp_container to div_comp
+                var p_comp = document.createElement("p") //Create p_name
+                var p_comp_txt = document.createTextNode(data[i].comp); //Set p text to the value it gets form the json
+                p_comp.appendChild(p_comp_txt); //Make p_comp_txt child of p_comp
+                div_comp.appendChild(p_comp); //Make p_name child of div_name
+                main_div.appendChild(div_comp); //Make div_comp child of main_div
+
+                var link = document.createElement("a"); //Create link
+                link.target = "_blank"; //Set link target to _blank
+                link.href= data[i].target; //Set link href to the value it gets from the json file
+                var div_more = document.createElement("div"); //Create div element div_more
+                div_more.className = "celeb_btn_container";  //Add class celeb_btn_container to div_more
+                var p_more = document.createElement("p"); //Create element p
+                var p_more_txt = document.createTextNode(data[i].desc); //Set p text to the value it gets from the json file
+                p_more.appendChild(p_more_txt); //Make p_more_txt child of p_more
+                div_more.appendChild(p_more); //Make p_more child of div_more
+                link.appendChild(div_more); //Make div_more child of link
+                main_div.appendChild(link); //Make link child of main_div
+
+                document.getElementById("celeb_cards").appendChild(main_div); //Get the "celeb_cards" id inside the file and print main_div inside it
+            }
+
+        }
+        request.send()
+    </script>
+
+</body>
+
+</html>
