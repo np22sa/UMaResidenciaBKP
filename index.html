@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="main.css">
+    <title>UMa: Residências Universitárias</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="academica logo" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar residências">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                        </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="symbol-defs.svg#icon-chat"></use>
+                        </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="user.jpg" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Anónimo</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Quartos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-shop"></use>
+                            </svg>
+                            <span>Receção</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Bar</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-game-controller"></use>
+                            </svg>
+                            <span>Espaços</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    Copyright &copy; UNIVERSIDADE da MADEIRA
+                </div>
+            </nav>
+            <main class="residencia-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="quarto.jpg" alt="quartos da residência" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="quartos.jpg" alt="quartos da residência" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="recepcao.jpg" alt="rececao" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="bar.jpg" alt="bar" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="espaco.jpg" alt="espaços comuns" class="gallery__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        RESIDÊNCIA NOSSA Srª DAS VITÓRIAS
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star"></use>
+                            </svg>
+                        <svg class="overview__icon-star">
+                                <use xlink:href="symbol-defs.svg#icon-star-outlined"></use>
+                            </svg>
+                    </div>
+
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                                <use xlink:href="symbol-defs.svg#icon-location-pin"></use>
+                            </svg>
+                        <button class="btn-inline">Rua de Santa Maria, nº253</button>
+                    </div>
+
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-count">429 votos</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quos officia nemo quisquam repellendus tenetur? Quo quos officia nemo?
+                        </p>
+                        <p class="paragraph">
+                            Nulla eaque sunt id aspernatur aut odit alias, explicabo ipsum totam porro pariatur nesciunt est?
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">31 Duplos (beliche)</li>
+                            <li class="list__item">45 Triplos (beliche + cama)</li>
+                            <li class="list__item">6 Duplos para alunos NEE</li>
+                            <li class="list__item">Cozinha equipada</li>
+                            <li class="list__item">Sala de convívio</li>
+                            <li class="list__item">Jardins</li>
+                            <li class="list__item">Snack-Bar</li>
+                            <li class="list__item">Gabinete Médico</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                4 estudantes recomendam esta residência.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825239?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars1.githubusercontent.com/u/43825290?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review" v-for="entry of biografias">
+
+                            <blockquote class="review__text">
+                                <a :href="'./'+entry.nickname+'/index.html'" class="review__text--link" target="_self">{{entry.review}}</a>
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img :src="entry.photo" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">
+                                        <a :href="'https://github.com/'+entry.nickname" class="review__user-name--link" target="_self">
+                                            {{entry.nickname}}
+                                        </a>
+                                    </p>
+                                    <p class="review__user-country">{{entry.country}}</p>
+                                </div>
+                                <div class="review__rating">{{entry.rating}}</div>
+                            </figcaption>
+
+                        </figure>
+
+                        <!-- <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Venezuela</p>
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Marrocos</p>
+                                </div>
+                                <div class="review__rating">8.1</div>
+                            </figcaption>
+                        </figure> -->
+
+                        <button class="btn-inline" @click="viewposts=!viewposts">Mostrar {{viewposts?'mais':'menos'}} recomendações <span>&rarr;</span></button>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script>
+        new Vue({
+            el: '.user-reviews',
+            created() {
+                this.fetchData();
+            },
+            data: {
+                posts: [],
+                shortposts: [],
+                viewposts: true
+            },
+            methods: {
+                fetchData() {
+                    axios.get('https://final-project-recording-817f4.firebaseio.com/hipermedia2018/.json')
+                        .then(response => {
+                            this.posts = response.data;
+                        })
+                        .then(response => {
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                            this.shortposts.push(this.posts[this.aleatorio(this.posts.length, 0)])
+                        })
+                },
+                aleatorio(max, min) {
+                    return Math.max(Math.floor(Math.random() * max) + 1, min)
+                }
+            },
+            computed: {
+                biografias() {
+                    if (this.viewposts) {
+                        return this.shortposts
+                    } else {
+                        return this.posts
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
