@@ -1,0 +1,99 @@
+:root {
+  --color-primary:  #FF0000;
+  --color-primary-light: #FF2E2E;
+  --color-primary-dark: #E80000;
+  --color-grey-light-1: #FFFFFC;
+  --color-grey-light-2: #E8E8E6;
+  --color-grey-light-3: #BABAB8;
+  --color-grey-dark-1: #000000;
+  --color-grey-dark-2: #515050;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  display: block;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url(img\istanbul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 5rem 3rem;
+  background-color: var(--color-grey-light-1);
+  -webkit-box-shadow: var(--shadow-dark);
+          box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #000;
+  padding: 22px 20px;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.nav-bar ul li a.active {
+  background-color: var(--color-grey-dark-3);
+  color: var(--color-grey-light-1);
+}
+
+.nav-bar ul li a.disable {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  background-color: var(--color-grey-dark-2);
+  color: var(--color-grey-light-1);
+}
+/*# sourceMappingURL=main.css.map */
