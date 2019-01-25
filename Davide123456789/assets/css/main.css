@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Tinos:400,700");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+header nav .navbar-bandeira {
+  float: left;
+}
+
+header nav .navbar-bandeira a {
+  text-decoration: none;
+}
+
+header nav .navbar-bandeira a h3 {
+  color: #4783c3;
+  font-size: 2rem;
+}
+
+header nav .navbar-nav {
+  float: right;
+  margin-top: 50px;
+}
+
+header nav .navbar-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav .navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+header nav .navbar-nav li a {
+  color: #4783c3;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav .navbar-nav li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main {
+  background-image: url("../img/santorini.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+main .main-welcome {
+  background-color: white;
+  text-align: left;
+  position: absolute;
+  bottom: 200px;
+  padding: 0 30px;
+}
+
+main .main-welcome h1 {
+  font-size: 2.5rem;
+  color: #4783c3;
+}
+
+main .main-welcome i {
+  font-size: 2rem;
+  color: #4783c3;
+  padding-bottom: 20px;
+}
+
+.teste2 {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+  height: 150px;
+}
+
+.teste2 h1 {
+  text-align: center;
+  color: #4783c3;
+}
+
+.teste2 a {
+  text-decoration: none;
+  display: block;
+}
+
+.teste2 a button {
+  width: 43px;
+  height: 44px;
+}
+
+.teste2 .text-left {
+  float: left;
+  width: 50%;
+  padding: 40px 0;
+}
+
+.teste2 .text-right {
+  float: right;
+  width: 40%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+   }
+   #fundo {
+    background-image: url('https://www.vaticannews.va/content/dam/vaticannews/images-multimedia/scienza/qweeqwqwww.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   #fundo .button:hover {
+    background-color: white;
+    color: black;
+   }
+   .painel {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    overflow: hidden;
+    color: gray;
+   }
+   .painel .painel_titulo {
+    float: center;
+    color: steelblue;
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   .flexcontainer {
+    display: flex;
+    margin: 0 auto;
+   }

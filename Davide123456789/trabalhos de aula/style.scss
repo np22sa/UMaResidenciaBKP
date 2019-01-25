@@ -1,0 +1,36 @@
+$cor--base: grey;
+$cor_quadrados: blue;
+
+@mixin quadrado($cor){
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: $cor;
+
+}
+
+body{background-color: $cor--base;}
+.quadrado--verde{
+    @include quadrado(green);
+
+}
+.quadrado--amarelo{
+    @include quadrado(yellow);
+
+}
+.quadrado--azul{
+    @include quadrado(blue);
+
+}
+.quadrado{
+    &__foto{
+        @include quadrado(pink)
+        color:greenyellow;
+    }
+    &__texto{
+        color:blue;
+    }
+    &__botoes{
+        color:red;
+    }
+}

@@ -1,0 +1,113 @@
+header {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none;
+        overflow: hidden;
+        
+        .navbar-bandeira {
+            float: left;
+
+            a {
+                text-decoration: none;
+            
+                h3 {
+                    color: #4783c3;
+                    font-size: 2rem;
+                }
+        
+            }
+        }
+        
+        .navbar-nav {
+            float: right;
+            margin-top: 50px;
+                
+            li {
+                display: inline-block;
+                margin-right: 20px;
+        
+                &:last-child {
+                    margin-right: 0;
+                }
+        
+                a {
+                    color: #4783c3;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    display: block;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    background-image: url("../img/santorini.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+
+    .main-welcome {
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        position: absolute;
+        bottom: 200px;
+        padding: 0 30px;
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4783c3;
+        }
+
+        i {
+            font-size: 2rem;
+            color: #4783c3;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.teste2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    height: 150px;
+
+    h1 {
+        text-align: center;
+        color: #4783c3;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+
+        button {
+            width: 43px;
+            height: 44px;
+        }
+    }
+    
+    .text-left {
+        float: left;
+        width: 50%;
+        padding: 40px 0;
+    }
+    
+    .text-right {
+        float: right;
+        width: 40%;
+    }
+}

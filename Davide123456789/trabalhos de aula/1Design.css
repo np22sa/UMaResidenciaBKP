@@ -1,0 +1,19 @@
+
+.flex-countainer { 
+    display: flex;
+    flex-wrap: wrap-reverse;
+background-color: blueviolet;
+   }
+
+   .flex-item {
+    order: 3;
+    Width: 150px;
+    height: 150px;
+    background-color: orangered;
+    margin: 5px;
+    padding: 50px;
+    color: black;
+    align-self: auto;
+    }
+
+   
