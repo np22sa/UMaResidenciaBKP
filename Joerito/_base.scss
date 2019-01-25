@@ -1,0 +1,85 @@
+:root{
+    --color-highlight-1: rgb(223, 0, 0);
+    --color-highlight-2: rgb(255, 228, 0);
+    --color-white-1: rgb(255, 255, 255);
+    --color-white-2: rgb(235, 235, 235);
+    --color-grey-1: #393E46;
+    --color-grey-2: #30343B;
+    --transparent: transparent;
+    --transparent-opacity-1: rgb(70, 70, 70);
+    --transparent-opacity-2: rgba(0, 0, 0, 0.7);
+    --transparent-opacity-3: rgba(255, 255, 255, 0.85);
+    --color-black: rgb(15, 15, 15);
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.555);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+    --line: 3px solid rgb(223, 0, 0);
+}
+
+.logo_ativar{
+    fill: var(--color-highlight-2);
+    transition: 2s;
+}
+.logo_desativar{
+    fill: black;
+    transition: 0.5s;
+}
+
+.nav_ativar{
+    background-color: var(--transparent-opacity-2);
+    transition: 0.5s;
+}
+.nav_desativar{
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.text-color_ativar{
+    color: white;
+    transition: 2s;
+}
+.text-color_desativar{
+    color: transparent;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white-1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.add-margin-top{
+    margin-top: 69.25px;
+}
+
+.add-hidden{
+    visibility: hidden;
+    padding: 0;
+    margin: 0px;
+    width: 0;
+    height: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: black;
+}
+.background-img{
+    width: 100%;
+    min-height: 10px;
+    background-image: url("https://www.bu.edu/asian/files/2015/05/detail-from-the-nine-dragons-scroll.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 0;
+    //border-top-right-radius: 50px;
+    //border-bottom-right-radius: 50px;
+    background-attachment: fixed;
+    background-position: center;
+}
