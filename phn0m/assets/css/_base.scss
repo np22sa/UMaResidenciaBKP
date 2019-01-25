@@ -1,0 +1,16 @@
+:root {
+    --color-nav-bar: #333;
+    --color-background: white;
+    --color-nav-bar-hover: #111;
+}
+
+html {
+    background-color: var(--color-background);
+    font-family: sans-serif;
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}

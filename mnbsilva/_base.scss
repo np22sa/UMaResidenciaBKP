@@ -1,0 +1,44 @@
+:root{
+    
+    --color-primary: #FFFFFF;
+    --color-nav-grey: #414a4f;
+    --color-nav-grey-light-1: #ccc;
+    --color-grey-light-1: #b5b5b6;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #414a4f;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+  
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+  
+body {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    /* padding-bottom: 100px; */
+}
+  
+h2, h3 {
+    margin: 0 0 .75em 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9;
+}

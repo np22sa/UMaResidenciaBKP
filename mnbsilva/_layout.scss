@@ -1,0 +1,240 @@
+/* menu*/
+
+// * {
+//     margin: 0;
+//     padding:0;
+// }
+
+.nav{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    background: var(--color-nav-grey);
+    color: var(--color-primary);
+    height: 45px;
+    font-family: sans-serif;
+}
+
+.nav-title{
+    width: 30%;
+    background: var(--color-nav-grey);
+    padding: 4px 40px;
+    text-align: left;
+}
+
+.nav-menu{
+    // width: 70%;
+    margin-left:auto;
+}
+
+.nav-menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul li{
+    padding: 10px 20px;
+    color: var(--color-nav-grey-light-1);
+    font-size: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-menu ul li:hover{
+    color:var(--color-primary);
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px){
+    .nav{
+        height: auto;
+    }
+    .nav .nav-title{
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav .nav-menu{
+        width: 100%;
+    }
+    .nav .nav-menu ul{
+        justify-content: space-around;
+    }
+
+    .nav .nav-menu ul li{
+        width: 20%;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* main page*/
+/* The hero image */
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/france_web3.jpg");
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+}
+
+/* blog */
+.call-outs-container{
+    max-width: 1400px;
+    margin: 40px 20px 0 20px;
+/*  display: flex;
+    justify-content: space-between; */
+}
+
+.call-out{
+    background-color: var(--color-grey-light-1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+@media (min-width:900px){
+    .call-outs-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.artigos{
+    max-width: 1400px;
+    margin: 40px 20px 0 20px;
+}
+.artigos-textos{
+    background-color: var(--color-grey-light-1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* photos */
+.gallery{
+    background-color: var(--color-primary);
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    /* padding: 125px 100px; */
+    padding: 0px 0px;
+}
+
+.gallery ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: var(-color-grey-dark-1);
+}
+
+.gallery .grid li.small{
+	flex-basis: 40%;
+}
+
+.gallery .grid li.large{
+	flex-basis: 60%;
+}
+
+
+@media (max-width: 1000px){
+	.gallery .grid li.small,
+	.gallery .grid li.large{
+		flex-basis: 100%;
+	}
+}
+
+.gallery-text{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+/*  display: flex;
+    justify-content: space-between; */
+}
+
+.gallery-text .text{
+    background-color: var(--color-primary);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+@media (min-width:900px){
+    .gallery-text{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* footer */
+// footer{
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	text-align: center;
+// 	color: var(--color-primary);
+// 	background-color: var(--color-grey-dark-2);
+//     padding: 30px 0;
+//     height: 30px;
+// }
+
+// footer ul{
+// 	display: flex;
+// 	margin-bottom: 25px;
+//     font-size: 32px;
+// }
+
+// footer ul li{
+// 	margin: 0 8px;	
+// }
+
+// footer ul li:first-child{
+// 	margin-left: 0;	
+// }
+
+// footer ul li:last-child{
+// 	margin-right: 0;	
+// }
+
+// footer p{
+// 	text-transform: uppercase;
+// 	font-size: 14px;
+// 	color: rgba(255,255,255,0.6);
+// 	margin-bottom: 2px;
+// }
+
+// footer p a{
+// 	color: #fff;
+// }
+
+// footer svg{
+// 	width: 1.75rem;
+// 	height: 1.75rem;
+// 	fill: azure;
+// }
