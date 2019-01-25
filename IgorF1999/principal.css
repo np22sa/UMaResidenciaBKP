@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #ffffff;
+  --color-bottom: rgb(0, 0, 0);
+  --color-representative-transparent:  rgb(66, 65, 65, 0.5);
+  --color-representative-transparent-visited:  rgba(143, 141, 141, 0.5);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 74px;
+  background-color: var(--color-representative-transparent);
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: table;
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+  background-color: none;
+}
+
+h1 {
+  float: left;
+}
+
+header .container {
+  display: table;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+section {
+  widows: 100%;
+  margin-bottom: 25px;
+}
+
+.logoprin {
+  height: 6.25rem;
+  margin-left: 2rem;
+  float: left;
+}
+
+.menu-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0 0 500px;
+}
+
+.menu-div {
+  padding: 0 10px 0 10px;
+}
+
+.menu-nav {
+  width: 100%;
+  height: 74px;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.menu-nav__link:link, .menu-nav__link:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-nav__link:hover {
+  color: var(--color-bottom);
+}
+
+.menu-nav__icon {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  padding: 2px;
+}
+
+#banner {
+  position: relative;
+}
+
+#banner img {
+  width: 100%;
+  height: 696px;
+}
+
+#banner .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: var(--color-primary);
+}
+
+#banner h2 {
+  font-size: 28px;
+}
+
+#banner a {
+  display: block;
+  width: 100px;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 7px;
+  text-align: center;
+  margin-top: 20px;
+  border: 3px solid #ffffff;
+}
+
+#banner a:hover {
+  color: var(--color-bottom);
+}
+
+#exemplosimages {
+  text-align: center;
+}
+
+#exemplosimages h3, #exemplosimages h4 {
+  text-align: center;
+}
+
+#exemplosimages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#exemplosimages article {
+  margin: 15px;
+}
+
+#exemplosimages img {
+  width: 100%;
+  max-width: 280px;
+}
+/*# sourceMappingURL=principal.css.map */

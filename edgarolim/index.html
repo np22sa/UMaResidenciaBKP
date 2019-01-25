@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mexico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        .slideshow-container {
+          max-width: 550px;
+          position: relative;
+          margin: auto;
+        }
+        
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png" alt="logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bubble"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="http://www.esek.org.gr/images/ESET/eset_user.png" alt="User photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Anónimo</span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="cultura.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-library"></use>
+                            </svg>
+                            <span>Cultura</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="foods.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-bowl"></use>
+                            </svg>
+                            <span>Comidas típicas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="monumentos.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-office"></use>
+                            </svg>
+                            <span>Monumentos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="festas.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>Festas</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-calendar"></use>
+                            </svg>
+                            <span>História</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    México - Edgar Olim
+                </div>
+            </nav>
+            <main>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="https://www.10wallpaper.com/wallpaper/1366x768/1212/Los_Cabos_Mexico-2013_fantasy_landscape_wallpaper_1366x768.jpg" style="width:100%">
+                    </div>                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="https://i.pinimg.com/originals/87/1b/cf/871bcf5e2e0e67fd03c6d7cc960b18fd.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6TAWAvrZv34JpOlWTUPgFC9YeSUuqBUrxPPZ7zNCJ_e_-qkU" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>                   
+                    </div>
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        História:
+                    </h1>
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location2"></use>
+                        </svg>
+                        <a class="btn-inline" href="https://goo.gl/maps/o3dQW7KuKDS2">México</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <div>
+                            <p class="paragraph">
+                            O México é um país com uma história bastante complexa, há indícios de povos que habitavam a região há mais de 20.000 anos. Durante a época pré-hispânica, houve o apogeu das civilizações olmeca, azteca, teotihuan, zapoteca e maya, que durou aproximadamente 4.000 anos antes dos habitantes nativos entrarem em contato com a civilização européia. Os primeiros habitantes da região que hoje conhecemos como México, construíram observatórios, desenvolveram um calendário com 365 dias, construíam aquedutos, utilizavam hieróglifos para escrever, fizeram avanços em matemática e conheciam a álgebra.
+                            </p>
+                            <p class="paragraph">Em 1519, o espanhol Hernán Cortez chegou à ilha de Cozumel e, de lá, se deu a invasão do atual território mexicano. Tenochtitlán, capital do império azteca, foi destruída a partir de 1520, sobre suas ruínas foi construída a atual capital do México, Cidade do México. Junto dos militares espanhóis, chegaram, em 1524, também missionários (frades franciscanos) que convertiam os indígenas à fé católica.
+                            
+                            A colônia não desejava mais enviar riquezas para Espanha, este foi o maior motivo para a declaração da independência mexicana. Foram feitos movimentos e levantes que logo foram abafados. Na madrugada de 16 de setembro de 1810, o padre Miguel Hidalgo y Costilla, prendeu as autoridades locais na cadeia e pôs os presos nas ruas. Depois, durante uma missa, conclamou a população a derrubar o governo, fato que foi denominado grito da independência, realizado em um povoado chamado Dolores. A república foi proclamada em 1824.
+                            </p>
+                            <p class="paragraph">
+                            Entre 1846 e 1848, durante a guerra com os Estados Unidos o México perdeu uma série de territórios localizados no norte do país: áreas que, hoje, comprendem os estados do Texas, Nevada California, Utah e Novo Mexico.
+                            Durante o Porfiriato, período de 31 anos (1876-1911) de governo do general Porfirio Díaz (interrompido apenas entre 1880 e 1884 quando Manuel González ascendeu ao poder), foram construídos 19.000 km de vias férreas, deu-se a integração mexicana através dos telégrafos, foram realizados investimentos estrangeiros e a industria nacional foi impulsionada. A revolução mexicana, responsável pelo fim do porfiriato, foi liderada por Zapata e Villas, ocorreu em 1910 e custou a vida de 10% da população daquela época.    
+                            </p>
+                            <p class="paragraph">
+                            O Partido revolucionário institucional (PRI) dominou a cena política mexicana entre 1929 e 2000, todos os presidentes eleitos neste período pertenciam ao PRI, até que, em 2000, Vicente Fox Quesada foi eleito pelo Partido da Ação Nacional do México. O México passou por uma séria crise econômica, em 1994, devida à falta de competitividade das empresas mexicanas face à instalação de empresas norte-americanas, pertencentes ao NAFTA, que se instalaram no país. Cerca de 200 mil mexicanos perderam seus empregos. O México precisou de ajuda externa e os EUA fizeram um empréstimo a aquele país de 29 bilhões de dólares. No final da década de 90, o México foi o país que mais cresceu na América Latina. Arquivado em: História, História da América Espanhola, México
+                            </p>
+                        </div>
+                        <br>
+                        <h3>Estados:</h3>
+                        <ul class="list">
+                            <li class="list__item">Estado do México</li>
+                            <li class="list__item">Distrito Federal</li>
+                            <li class="list__item">Veracruz</li>
+                            <li class="list__item">Jalisco</li>
+                            <li class="list__item">Puebla</li>
+                            <li class="list__item">Guanajuato</li>
+                            <li class="list__item">Chiapas</li>
+                            <li class="list__item">Nuevo León</li>
+                            <li class="list__item">Michoacán</li>
+                            <li class="list__item">Oaxaca</li>
+                            <li class="list__item">Chihuahua</li>
+                            <li class="list__item">Guerrero</li>
+                            <li class="list__item">Tamaulipas</li>
+                            <li class="list__item">Baja California</li>
+                            <li class="list__item">Sinaloa</li>
+                            <li class="list__item">Coahhuila</li>
+                            <li class="list__item">Hidalgo</li>
+                            <li class="list__item">Sonora</li>
+                            <li class="list__item">San Luis Potosí</li>
+                            <li class="list__item">Tabasco</li>
+                            <li class="list__item">Iucatã</li>
+                            <li class="list__item">Queretaro</li>
+                            <li class="list__item">Morelos</li>
+                            <li class="list__item">Durango</li>
+                            <li class="list__item">Zacatecas</li>
+                            <li class="list__item">Quintana Roo</li>
+                            <li class="list__item">Aguascalientes</li>
+                            <li class="list__item">Tlaxcala</li>
+                            <li class="list__item">Nayarit</li>
+                            <li class="list__item">Campeche</li>
+                            <li class="list__item">Colima</li>
+                            <li class="list__item">Baja California Sur</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Anónimo e outros 3 estudantes recomendam esta residência.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825239?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825290?s=88&v=4" alt="foto" class="recommend__photo">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint libero quod
+                                officiis vel?
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/44034816?s=88&v=4" alt="foto" class="review__photo">
+
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Venezuela</p>
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://avatars3.githubusercontent.com/u/43825275?s=88&v=4" alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Anónimo</p>
+                                    <p class="review__user-country">Marrocos</p>
+                                </div>
+                                <div class="review__rating">8.1</div>
+                            </figcaption>
+                        </figure>
+                        <button class="btn-inline"> Mostrar todos<span></span>&rarr;</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
